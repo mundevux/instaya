@@ -22,8 +22,8 @@ function Home() {
                         <button type="submit" className="w-full bg-burnt-sienna-600 hover:bg-burnt-sienna-500 py-2 px-3 text-nile-blue-50 rounded-lg text-center">Login</button>
                     </div>
                     <div className="flex justify-around items-center mt-5">
-                        <a href="./#" className="mx-3 text-center text-xs md:text-base text-burnt-sienna-500">¿Olvidaste tu contraseña?</a>
-                        <a href="./#" className="mx-3 text-center text-xs md:text-base text-burnt-sienna-500">¿No tienes una cuenta?</a>
+                        <a href="./#" className="mx-3 text-center text-xs md:text-base text-burnt-sienna-500">Forgot your password?</a>
+                        <a href="./#" className="mx-3 text-center text-xs md:text-base text-burnt-sienna-500">Don't have an account?</a>
                     </div>
                 </form>
             </div>
