@@ -4,6 +4,7 @@ import Logo from '../img/Logo_InstaYa.png';
 
 
 
+
 function Home() {
 
 
