@@ -1,11 +1,10 @@
 import React from "react";
 import UpdateOrder from "./UpdateOrder";
-
 function OrderManagement() {
   return (
     <div>   
         <div class="overflow-x-auto relative shadow-md rounded-lg md:w-1/2 md:mx-auto mx-5">
-            <h1  className="text-4xl font-bold text-center my-8 text-nile-blue-900">OrderManagement</h1>
+            <h1  className="text-4xl font-bold text-center my-8 text-nile-blue-900">Order Management</h1>
             <table class="w-full text-sm text-left">
                 <thead class="text-sm uppercase bg-nile-blue-100 ">
                     <tr>
@@ -35,10 +34,10 @@ function OrderManagement() {
                             01/01/2021
                         </td>
                         <td class="py-4 px-6 text-center">
-                            Santa Marta
+                            Adelaide
                         </td>
                         <td class="py-4 px-6 text-center">
-                            Pending
+                            Saved
                         </td>
                         <td class="py-4 px-6 text-center text-burnt-sienna-500">
                             <a href={UpdateOrder} class="font-medium text-blue-600 hover:underline">Edit</a>
@@ -52,10 +51,10 @@ function OrderManagement() {
                             01/02/2021
                         </td>
                         <td class="py-4 px-6 text-center">
-                            Bogotá D.C.
+                            Petra
                         </td>
                         <td class="py-4 px-6 text-center">
-                            Delivered
+                            Done
                         </td>
                         <td class="py-4 px-6 text-center text-burnt-sienna-500">
                             <a href={UpdateOrder} class="font-medium text-blue-600 hover:underline">Edit</a>
@@ -69,10 +68,10 @@ function OrderManagement() {
                             01/01/2021
                         </td>
                         <td class="py-4 px-6 text-center">
-                            Ibagué
+                            Brujas
                         </td>
                         <td class="py-4 px-6 text-center">
-                            Processing
+                            Cancelled
                         </td>
                         <td class="py-4 px-6 text-center text-burnt-sienna-500">
                             <a href={UpdateOrder} class="font-medium text-blue-600 hover:underline">Edit</a>
@@ -86,10 +85,10 @@ function OrderManagement() {
                             01/01/2021
                         </td>
                         <td class="py-4 px-6 text-center">
-                            Tunja
+                            Camberra
                         </td>
                         <td class="py-4 px-6 text-center">
-                            On the way
+                            Done
                         </td>
                         <td class="py-4 px-6 text-center text-burnt-sienna-500">
                             <a href={UpdateOrder} class="font-medium text-blue-600 hover:underline">Edit</a>
@@ -103,16 +102,19 @@ function OrderManagement() {
                             01/01/2021
                         </td>
                         <td class="py-4 px-6 text-center">
-                            Barranquilla
+                            Wales
                         </td>
                         <td class="py-4 px-6 text-center">
-                            Processing
+                            Cancelled
                         </td>
                         <td class="py-4 px-6 text-center text-burnt-sienna-500">
                             <a href={UpdateOrder} class="font-medium text-blue-600 hover:underline">Edit</a>
                         </td>
                     </tr>
                 </tbody>
+                <div className="flex justify-around items-center mb-10">
+                    <button className="bg-burnt-sienna-500 text-[white] font-medium py-2 px-4 mx-2 rounded-lg">Create Order</button>
+                </div>
             </table>
         </div>
     </div>
