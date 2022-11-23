@@ -30,9 +30,9 @@ function CreateOrder() {
                         </div>
                         <div>
                             <label className="pb-1 text-nile-blue-600" htmlFor="pickUpFrom">Time slot available for pick up from</label>
-                            <input className="bg-nile-blue-50 border border-nile-blue-500 text-sm rounded-lg focus:ring-nile-blue-500 focus:border-nile-blue-700 block w-full p-2.5" type="hour" name="pickUpFrom" id="pickUpFrom" placeholder=""/>
+                            <input className="bg-nile-blue-50 border border-nile-blue-500 text-sm rounded-lg focus:ring-nile-blue-500 focus:border-nile-blue-700 block w-full p-2.5" type="time" name="pickUpFrom" id="pickUpFrom" placeholder=""/>
                             <label className="pb-1 text-nile-blue-600" htmlFor="pickUpTo">To</label>
-                            <input className="bg-nile-blue-50 border border-nile-blue-500 text-sm rounded-lg focus:ring-nile-blue-500 focus:border-nile-blue-700 block w-full p-2.5" type="hour" name="pickUpTo" id="pickUpTo" placeholder=""/>
+                            <input className="bg-nile-blue-50 border border-nile-blue-500 text-sm rounded-lg focus:ring-nile-blue-500 focus:border-nile-blue-700 block w-full p-2.5" type="time" name="pickUpTo" id="pickUpTo" placeholder=""/>
                         </div>
                     </div>
                     <h2 className="text-2xl font-semibold mt-8 mb-5 text-nile-blue-700">Package details</h2>
