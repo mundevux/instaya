@@ -35,6 +35,8 @@ let slideSchema = new Schema({
           required:false
         }
 })
+
+
 const Slide = mongoose.model("slide", slideSchema);
 app.get('/',(req,res )=>{
      Slide.find({})
@@ -100,10 +102,10 @@ app.delete('/borrar-slide/:id', (req, res) =>{
 
 
 
-mongoose.connect('mongodb://localhost:27017/apirest',{useNewUrlParser: true,useUnifiedTopology: true}, (err,res)=>{
+mongoose.connect('mongodb://localhost:27017/database',{useNewUrlParser: true,useUnifiedTopology: true}, (err,res)=>{
    if (err) throw err;
    console.log("conectado a la base de datos")
 });
-app.listen(4000, ()=>{
+app.listen(3000, ()=>{
     console.log("habilitado el puerto 4000");
 })
