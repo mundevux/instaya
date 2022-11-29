@@ -2,28 +2,25 @@ const mongoose = require('mongoose');
 
 let Schema = mongoose.Schema;
 
-let articulosSchema = new Schema({
+let userSchema = new Schema({
+	id :{
+       type: Number,
+	   required: [true,"por favor digite un consecutivo"]
+	},
 
-	portada: {
+	name: {
 		type: String,
-		required: [true, "La portada es obligatoria"]
+		required: [true, "el nombre es obligatorio"]
 	},
-	titulo: {
-		type: String,
-		required: [true, "el titulo es obligatoria"]
+	password: {
+		type: password,
+		required: [true, "la contraseña es obligatoria"]
 	},
-	intro: {
+	correo: {
 		type: String,
-		required: [true, "el intro es obligatoria"]
+		required: [true, "el el correo es obligatoria"]
 	},
-    url: {
-		type: String,
-		required: [true, "La url es obligatoria"]
-	},
-    contenido: {
-		type: String,
-		required: [true, "el contenido es obligatoria"]
-	}
+	collection: 'user'
 })
 
-module.exports = mongoose.model("articulos", articulosSchema);
+module.exports = mongoose.model("user", userSchema);

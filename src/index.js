@@ -107,5 +107,5 @@ mongoose.connect('mongodb://localhost:27017/database',{useNewUrlParser: true,use
    console.log("conectado a la base de datos")
 });
 app.listen(3000, ()=>{
-    console.log("habilitado el puerto 4000");
+    console.log("habilitado el puerto 3000");
 })
