@@ -102,7 +102,7 @@ app.delete('/borrar-slide/:id', (req, res) =>{
 
 
 
-mongoose.connect('mongodb://localhost:27017/database',{useNewUrlParser: true,useUnifiedTopology: true}, (err,res)=>{
+mongoose.connect('mongodb+srv://admin:<password>@cluster5.usshbxi.mongodb.net/test',{useNewUrlParser: true,useUnifiedTopology: true}, (err,res)=>{
    if (err) throw err;
    console.log("conectado a la base de datos")
 });
